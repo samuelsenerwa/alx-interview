@@ -5,7 +5,7 @@ Pascal triangle implemention
 """
 
 
-def pascal_traingle(n):
+def pascal_triangle(n):
     """
     returns the list of the numbers forming the pascal
     triangle
@@ -13,7 +13,7 @@ def pascal_traingle(n):
     if n <= 0:
         return []
 
-    pascal_traingle = [0] * n
+    pascal_triangle = [0] * n
 
     for i in range(n):
         # defining a row and filling the first and the last index with 1
@@ -29,4 +29,4 @@ def pascal_traingle(n):
 
             pascal_traingle[i] = new_row
 
-    return pascal_traingle
+    return pascal_triangle
