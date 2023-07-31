@@ -23,10 +23,10 @@ def pascal_triangle(n):
 
         for j in range(1, i):
             if j > 0 and j < len(new_row):
-                a = pascal_traingle[i - 1][j]
-                b = pascal_traingle[i - 1][j - 1]
+                a = pascal_triangle[i - 1][j]
+                b = pascal_triangle[i - 1][j - 1]
                 new_row[j] = a + b
 
-            pascal_traingle[i] = new_row
+            pascal_triangle[i] = new_row
 
     return pascal_triangle
