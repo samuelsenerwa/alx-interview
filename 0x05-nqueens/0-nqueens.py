@@ -11,7 +11,7 @@ def nqueens(n, y, board):
     Parameters: n is an int that sets board size and # of queens
     Return: All the possible solutions to the placement, in list of lists form
     """
-    for x in range(x):
+    for x in range(n):
         hold = 0
         for q in board:
             if x == q[1]:
