@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-""" Solving Nqueens with backtracking algorithm"""
-
+"""Solving N Queens with Backtracing"""
 import sys
 
 
 def nqueens(n, y, board):
     """
-    Methods: nqueens - placed n queens
-    on an n by n board so that no queens are attacking any others.
-    Parameters: n is an int that sets board size and # of queens
-    Return: All the possible solutions to the placement, in list of lists form
+    Method: nqueens - place n queens
+            on an n by n board so that
+            no queens are attacking any
+            others.
+    Parameters: n is an int that sets
+                board size and # of queens
+    Return: All possible solutions to
+            placement, in list of lists form
     """
     for x in range(n):
         hold = 0
@@ -37,12 +40,12 @@ def main():
         print("Usage: nqueens N")
         sys.exit(1)
     try:
-        n = init(sys.argv[1])
+        n = int(sys.argv[1])
     except Exception:
         print('N must be a number')
         sys.exit(1)
     if n < 4:
-        print("N must be atleast 4")
+        print("N must be at least 4")
         sys.exit(1)
 
     nqueens(n, 0, [])
